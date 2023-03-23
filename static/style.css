@@ -10,15 +10,17 @@ p {
   font-family: 'Courier New', Courier, monospace;
 }
 
-a {
+input {
   font-size: 26px;
   text-decoration: none;
-  padding: 0 0 0 122px;
 }
 
 #tabulka {
   border: solid;
   margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 td {
