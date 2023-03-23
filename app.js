@@ -2,6 +2,8 @@ import express from 'express';
 
 const app = express();
 
+app.use('/static', express.static('static'));
+
 app.get('/', (req, res) => {
   res.write('<!DOCTYPE html>');
   res.write('<html lang = "cs">');
@@ -11,6 +13,8 @@ app.get('/', (req, res) => {
   res.write('<body>');
   res.write('<h1>nesnasim SQL</h1>');
   res.write('<a href = "/stats">Statistika</a>');
+  res.write('<br>');
+  res.write('<a href = "/static/index.html">Ustav</a>');
   res.write('</body>');
   res.write('</html>');
   res.end();
@@ -19,7 +23,7 @@ app.get('/', (req, res) => {
 app.get('/stats', (req, res) => {
   res.json({
     who: 'Matej',
-    gpa: 4.21,
+    gpa: 1.73,
   });
 });
 
