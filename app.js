@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.write('<meta charset = "UTF-8">');
   res.write('</head>');
   res.write('<body>');
-  res.write('<h1>nesnasim SQL</h1>');
+  res.write('<h1>nesnasim SQL x</h1>');
   res.write('<a href = "/stats">Statistika</a>');
   res.write('<br>');
   res.write('<a href = "/static/index.html">Ustav</a>');
